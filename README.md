@@ -9,6 +9,10 @@ This is a React native app to show weather information (listed below) for the cu
   - Visibility
   - Wind speed and direction
   - Name of the location
+  
+  ## Special note
+   - Fetch lattitide and longitude from web api(browser)
+   - fetch city name from expo location api
 	
 ## Install & Build
   Clone this repository
