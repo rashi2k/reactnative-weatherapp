@@ -101,6 +101,15 @@ export default class WeatherInfoView extends Component {
             .then(() =>
                 this.saveToDatabase()
             ).catch(error => {
+                this.setState({
+                    loading: false,
+                    tempreture: "Not Available",
+                    humidity: "Not Available",
+                    windDirection: "Not Available",
+                    windSpeed: "Not Available",
+                    visibility: "Not Available",
+                    pressure: "Not Available",
+                })
                 console.log("..-" + JSON.stringify(error));
             });
     }
