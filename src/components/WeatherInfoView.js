@@ -76,7 +76,7 @@ export default class WeatherInfoView extends Component {
     }
 
     getWeatherInformation = (city) => {
-        city = "Ambalangoda"
+        //city = "Ambalangoda"
         fetch('https://community-open-weather-map.p.rapidapi.com/weather?q=' + city, {
             method: 'GET',
             headers: {
@@ -132,11 +132,6 @@ export default class WeatherInfoView extends Component {
                 (_, { rows: { _array } }) => this.setState({ items: _array })
             );
         });
-
-        //console.log(this.state.items);
-        //tx.executeSql("select * from tbl_weather", [], (_, { rows }) =>
-        //  console.log(JSON.stringify(rows))
-        //);
     }
 
     onDataSaveError = () => {
